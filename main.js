@@ -23,26 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 
-  chrome.tabs.query(
-    { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
-    function(tabs) {
-      const { id: tabId } = tabs[0].url;
+  // chrome.tabs.query(
+  //   { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
+  //   function(tabs) {
+  //     const { id: tabId } = tabs[0].url;
   
-      let code = `document.querySelector('h1')`;
+  //     let code = `document.querySelector('h1')`;
   
-      // http://infoheap.com/chrome-extension-tutorial-access-dom/
-      chrome.tabs.executeScript(tabId, { code }, function (result) {
-        // result has the return value from `code`
-      });
-    }
-  );
+  //     // http://infoheap.com/chrome-extension-tutorial-access-dom/
+  //     chrome.tabs.executeScript(tabId, { code }, function (result) {
+  //       // result has the return value from `code`
+  //     });
+  //   }
+  // );
+
   // console.log(tablink)
-  // fetch('https://otp.dev/en/docs/', {method: 'GET', mode: 'no-cors', 'Access-Control-Allow-Origin':'*'})
-  //   .then((data) => {  
-  //     let txt = document.getElementById('text')
-  //     txt.innerText = data
-  //     console.log(data)
-  // })
+  fetch('https://www.ebay.com', {method: 'GET', headers: {'Access-Control-Allow-Origin':'*'}})
+    .then((data) => {  
+      let txt = document.getElementById('text')
+      txt.innerText = data
+      console.log(data)
+  })
   //   const res=await fetch (window.location);
   //   const record=await res.json();
   //   return res
