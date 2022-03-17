@@ -10,7 +10,8 @@ body{
   align-items: center;
   flex-wrap: wrap;
   border: 5px black;
-  margin: 10px;
+  margin: 20px;
+
 }
 
 p {

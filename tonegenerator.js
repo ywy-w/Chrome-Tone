@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function playNote() {
       console.log('playing note:', note) 
       let music = new Audio(`samples/${note}.wav`)
+      music.volume = .70
       music.preservesPitch = false
       music.playbackRate = pitch
       music.loop = false
