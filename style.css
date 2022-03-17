@@ -1,0 +1,38 @@
+body{
+  font-family: 'Abel', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 5px black;
+  margin: 10px;
+}
+
+p {
+  font-weight: bold;
+}
+
+#play {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#melody{
+  display: flex;
+  flex-basis: auto;
+
+}
+
+#timing{
+  display: flex;
+  flex-basis: auto;
+}

@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // );
 
   // console.log(tablink)
-  fetch('https://www.ebay.com', {method: 'GET', headers: {'Access-Control-Allow-Origin':'*'}})
+  fetch('http://www.ebay.com', {method: 'GET', mode: 'no-cors'})
     .then((data) => {  
-      let txt = document.getElementById('text')
-      txt.innerText = data
+      // let txt = document.getElementById('text')
+      // txt.innerText = data
       console.log(data)
   })
   //   const res=await fetch (window.location);

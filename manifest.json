@@ -8,5 +8,15 @@
       "default_popup": "index.html",
       "default_title": "Hello World"
   },
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "<all_urls>"],
+  "content_scripts": [
+  {
+    "matches":["<all_urls>"],
+    "run_at": "document_end"
+  },
+  {
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'" 
+  },
+  {"host_permissions": ["https://www.ebay.com/*"]}
+]
 }
