@@ -1,0 +1,18 @@
+{
+  "name": "Chrome Tone",
+  "version": "1.0.0",
+  "description": "Play back the musical equivalent of a website.",
+  "manifest_version": 3,
+  "author": "E Kathuria & Yale Yng-Wong",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "Hello World"
+  },
+  "permissions": ["tabs", "<all_urls>"],
+  "content_scripts": [
+  {
+    "matches":["<all_urls>"],
+    "run_at": "document_end"
+  }
+]
+}
