@@ -5,7 +5,7 @@ Samples are provided, but you can populate the samples folder with any number of
 
 Use rename.py to rename your sample files into the correct format (1.wav - n.wav).
 
-Then change line 2 in tonegenerator.js to reflect the number of files in the samples folder.
+Then change the SAMPLES varible on line 2 in tonegenerator.js to reflect the number of files in the samples folder.
 
 If you'd like to use .mp3 files, modify fileType on line 3 in rename.py and FILETYPE on line 3 in tonegenerator.js.
 
