@@ -6,7 +6,7 @@
   "author": "E Kathuria & Yale Yng-Wong",
   "action":{
       "default_popup": "index.html",
-      "default_title": "Hello World"
+      "default_title": "Chrome Tone"
   },
   "permissions": ["tabs"]
 }

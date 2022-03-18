@@ -1,16 +1,22 @@
 body{
+  position: relative;
   font-family: 'Abel', sans-serif;
   font-family: 'Noto Sans', sans-serif;
-
   display: flex;
-  width: 400px;
+  width: 25rem;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 5px black;
-  margin: 20px;
+  /* border: 5px black; */
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
 
 }
 
@@ -18,22 +24,41 @@ p {
   font-weight: bold;
 }
 
+h1 {
+  background: -webkit-linear-gradient(#333,#eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #play {
   display: flex;
   width: 400px;
+  height: 2rem;
+  flex-grow: 1;
   justify-content: center;
   align-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #melody{
   display: flex;
-  flex-basis: auto;
-
+  /* flex-wrap: wrap; */
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: rgb(88, 88, 88);
 }
 
 #timing{
   display: flex;
-  flex-basis: auto;
+  /* flex-wrap: wrap; */
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: rgb(88, 88, 88);
 }
